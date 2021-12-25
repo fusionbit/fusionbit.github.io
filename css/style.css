@@ -9,6 +9,16 @@
     border: 5px solid #3eaaf6;
 }
 
+.user-image {
+    border-radius: 50%;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 5px solid #3eaaf6;
+}
+
 .large-text {
     font-size: xx-large;
 }
