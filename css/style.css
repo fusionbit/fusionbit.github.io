@@ -1,0 +1,352 @@
+#top-part {
+    margin-top: -150px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    height: 250px;
+    background-color: #00acc1;
+}
+
+.large-text {
+    font-size: xx-large;
+}
+
+.content-titles {
+    font-family: 'Delius', cursive;
+}
+
+.vertical-line {
+    display: block;
+    height: 100%;
+    background-color: black;
+}
+
+.my-video-container {
+. video-container;
+    margin-bottom: 5%;
+}
+
+.social-btn {
+    height: 30px;
+    width: 30px;
+}
+
+.quote-font {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 32px;
+}
+
+.cover-background {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/cover-bg2.jpg');
+    position: absolute;
+}
+
+.doodle-background {
+    padding: 0;
+    margin: 0;
+    height: 350px;
+    background-image: url('../img/doodle.jpg');
+    background-position: left;
+    background-repeat: repeat;
+}
+
+.default-cursor:hover {
+    cursor: default;
+}
+
+.circle {
+    border-radius: 35px;
+    border: solid 2px red;
+}
+
+#my-heart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: -30px !important;
+}
+
+.heart {
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 50px;
+}
+
+.heart-animation {
+    animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#mom {
+    background: url('../img/heart/mom.jpg') center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mom-animation {
+    animation: mom-show-up .2s ease forwards, orbitMom 10s linear .2s infinite;;
+}
+
+@keyframes mom-show-up {
+    0% {
+        opacity: 0;
+        bottom: 0
+    }
+    100% {
+        opacity: 1;
+        bottom: 100px
+    }
+}
+
+#dad {
+    position: absolute;
+    background: url('../img/heart/dad.jpg') center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.dad-animation {
+    animation: dad-show-up .2s ease forwards, orbitDad 10s linear .2s infinite;
+}
+
+@keyframes dad-show-up {
+    0% {
+        opacity: 0;
+        top: 0
+    }
+    100% {
+        opacity: 1;
+        top: 100px
+    }
+}
+
+#sis {
+    position: absolute;
+    background: url('../img/heart/sis1.jpg') center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sis-animation {
+    animation: sis-show-up .2s ease forwards, orbitSis 10s linear .2s infinite;
+}
+
+@keyframes sis-show-up {
+    0% {
+        opacity: 0;
+        right: 0;
+    }
+    100% {
+        opacity: 1;
+        right: 200px
+    }
+}
+
+#wife {
+    position: absolute;
+    background: url('../img/heart/wife.jpg') center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wife-animation {
+    animation: wife-show-up .2s ease forwards, orbitWife 10s linear .2s infinite;
+}
+
+@keyframes wife-show-up {
+    0% {
+        opacity: 0;
+        left: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 200px
+    }
+}
+
+.orbit-spin {
+    animation: myOrbit 6s linear infinite;
+}
+
+@keyframes orbitWife {
+    0% {
+        transform: rotate(270deg) translateX(0px) translateY(100px) rotate(-270deg) scale(1);
+        left: 0;
+    }
+    25% {
+        transform: rotate(360deg) translateX(0px) translateY(100px) rotate(-360deg) scale(1);
+        left: 0;
+    }
+    50% {
+        transform: rotate(450deg) translateX(0px) translateY(100px) rotate(-450deg) scale(1);
+        left: 0;
+    }
+    75% {
+        transform: rotate(540deg) translateX(0px) translateY(100px) rotate(-540deg) scale(1);
+        left: 0;
+    }
+    100% {
+        transform: rotate(630deg) translateX(0px) translateY(100px) rotate(-630deg) scale(1);
+        left: 0;
+    }
+
+}
+
+@keyframes orbitDad {
+    0% {
+        transform: rotate(360deg) translateX(0px) translateY(100px) rotate(-360deg) scale(1);
+        top: 0;
+    }
+    25% {
+        transform: rotate(450deg) translateX(0px) translateY(100px) rotate(-450deg) scale(1);
+        top: 0;
+    }
+    50% {
+        transform: rotate(540deg) translateX(0px) translateY(100px) rotate(-540deg) scale(1);
+        top: 0;
+    }
+    75% {
+        transform: rotate(630deg) translateX(0px) translateY(100px) rotate(-630deg) scale(1);
+        top: 0;
+    }
+    100% {
+        transform: rotate(720deg) translateX(0px) translateY(100px) rotate(-720deg) scale(1);
+        top: 0;
+    }
+}
+
+@keyframes orbitMom {
+    0% {
+        transform: rotate(180deg) translateX(0px) translateY(100px) rotate(-180deg) scale(1);
+        bottom: 0;
+    }
+    25% {
+        transform: rotate(270deg) translateX(0px) translateY(100px) rotate(-270deg) scale(1);
+        bottom: 0;
+    }
+    50% {
+        transform: rotate(360deg) translateX(0px) translateY(100px) rotate(-360deg) scale(1);
+        bottom: 0;
+    }
+    75% {
+        transform: rotate(450deg) translateX(0px) translateY(100px) rotate(-450deg) scale(1);
+        bottom: 0;
+    }
+    100% {
+        transform: rotate(540deg) translateX(0px) translateY(100px) rotate(-540deg) scale(1);
+        bottom: 0;
+    }
+}
+
+@keyframes orbitSis {
+    0% {
+        transform: rotate(90deg) translateX(0px) translateY(100px) rotate(-90deg) scale(1);
+        right: 0;
+    }
+    25% {
+        transform: rotate(180deg) translateX(0px) translateY(100px) rotate(-180deg) scale(1);
+        right: 0;
+    }
+    50% {
+        transform: rotate(270deg) translateX(0px) translateY(100px) rotate(-270deg) scale(1);
+        right: 0;
+    }
+    75% {
+        transform: rotate(360deg) translateX(0px) translateY(100px) rotate(-360deg) scale(1);
+        right: 0;
+    }
+    100% {
+        transform: rotate(450deg) translateX(0px) translateY(100px) rotate(-450deg) scale(1);
+        right: 0;
+    }
+}
+
+.panel-wrapper {
+    position: relative;
+}
+
+.btn {
+    left: 30%;
+    width: 40%;
+}
+
+.show2, .hide2 {
+    position: absolute;
+    bottom: -1em;
+    z-index: 100;
+    text-align: center;
+}
+
+.hide2 {
+    display: none;
+}
+
+.show2:target {
+    display: none;
+}
+
+.show2:target ~ .hide2 {
+    display: block;
+}
+
+.show2:target ~ .panel {
+    max-height: 100%;
+}
+
+.show2:target ~ .fade {
+    display: none;
+}
+
+.panel {
+    position: relative;
+    margin: 2em auto;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.fade {
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(100, 100, 100, 0) 0%, #FFFFFF 65%);
+    height: 100px;
+    margin-top: -100px;
+    position: relative;
+}
