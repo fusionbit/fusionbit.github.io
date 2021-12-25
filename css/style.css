@@ -6,6 +6,7 @@
     border-radius: 50%;
     height: 250px;
     background-color: #fff;
+    border: 5px solid #3eaaf6;
 }
 
 .large-text {
