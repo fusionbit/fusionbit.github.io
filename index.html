@@ -113,9 +113,24 @@
                         We are always looking for developers who wants to work ethically with us.
                     </p>
                     <br>
-                    <p class="center"><a class="btn" href="mailto:fusionbit.in@gmail.com" target="_blank" style="width: 180px;">JOIN FUSIONBIT</a></p>
+                    <p class="center"><a class="btn" href="mailto:fusionbit.in@gmail.com" target="_blank"
+                                         style="width: 180px;">JOIN FUSIONBIT</a></p>
                     <br>
-                    <p class="center"><a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSvtIqWv7NOtY0wJDanhiWGeGNofIwdLAku0tFjTfQPsThko-sVfV9Q_x1-Yu9CnJaekSA_L2gHJyx7/pub" style="width: 180px; color: white; cursor: pointer; text-decoration: underline;">Work from Home Terms & Policy</a></p>
+                    <div style="display: flex; justify-content: space-between; text-align: center;">
+                        <p><a target="_blank"
+                              href="https://docs.google.com/document/d/e/2PACX-1vSvtIqWv7NOtY0wJDanhiWGeGNofIwdLAku0tFjTfQPsThko-sVfV9Q_x1-Yu9CnJaekSA_L2gHJyx7/pub"
+                              style="font-size: 12px; width: 180px; color: white; cursor: pointer; text-decoration: underline;">Work
+                            from Home Terms & Conditions</a></p>
+                        <p><a target="_blank"
+                              href="https://docs.google.com/document/d/e/2PACX-1vT25A47ryiB9vJDtRYMMG4jwHBdbCQfSckB9cH98C2bC4sPUIlgQ0jt4dz03Y8LyrYj0M2AWjoHaV-N/pub"
+                              style="font-size: 12px; width: 180px; color: white; cursor: pointer; text-decoration: underline;">Customer
+                            Service Policy</a></p>
+                        <p><a target="_blank"
+                              href="https://docs.google.com/document/d/e/2PACX-1vQngKXQ-vTAFqa3LCiyBZAz3fgQITUXoGpnm9brSDCOhuSDDy-TNZxCQFdY6GPEQCCvu9YLzMhfgQhE/pub"
+                              style="font-size: 12px; width: 180px; color: white; cursor: pointer; text-decoration: underline;">Internship
+                            Program Details</a></p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -126,7 +141,8 @@
             <div class="card red darken-3">
                 <div class="card-content white-text">
                     <p>
-                        Currently looking for Experienced <b>Core JSP Developer</b> and <b>CSS Developer</b>. Work remotely
+                        Currently looking for Experienced <b>Core JSP Developer</b> and <b>CSS Developer</b>. Work
+                        remotely
                         10-15 Hrs/week.
                     </p>
                     <br>
@@ -138,7 +154,8 @@
                     <br>
                     <p>
                         Drop us an email on <i><a style="color: white"
-                                               href="mailto:fusionbit.in@gmail.com">fusionbit.in@gmail.com</a></i> if you are interested.
+                                                  href="mailto:fusionbit.in@gmail.com">fusionbit.in@gmail.com</a></i> if
+                        you are interested.
                     </p>
                 </div>
             </div>
@@ -1223,6 +1240,12 @@
     <div class="row center">
         <div id="rutvik-mehta" class="col s12 m4 center">
             <img class="user-image" src="img/me.jpeg">
+            <div class="badges" style="position: relative; margin-top: -36px; margin-bottom: -21px; margin-right: 0;">
+                <img class="tooltipped" data-position="bottom"
+                     data-tooltip="Fusion badge is for those who shows dedication and are expert at team management skills."
+                     height="50" width="50"
+                     src="img/badges/fusionbit.png">
+            </div>
             <p>Rutvik Mehta<br><span style="color: darkgrey">Full-Stack Developer</span></p>
         </div>
 
@@ -1287,7 +1310,16 @@
         </div>
 
         <div class="col s12 m4 center">
-            <img class="user-image" src="img/team/drashti_parikh.png">
+            <div>
+                <img class="user-image" src="img/team/drashti_parikh.png">
+            </div>
+
+            <div class="badges" style="position: relative; margin-top: -36px; margin-bottom: -21px; margin-right: 0;">
+                <img class="tooltipped" data-position="bottom"
+                     data-tooltip="Bronze badge describes well trained junior Develoepr" height="50" width="50"
+                     src="img/badges/bronze.png">
+            </div>
+
             <p>Drashti Parikh<br><span style="color: darkgrey">Java Intern</span></p>
         </div>
 
@@ -1399,8 +1431,13 @@
 
     var props = 1;
 
-    $(document).ready(function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems, options);
+    });
 
+    $(document).ready(function () {
+        $('.tooltipped').tooltip();
     });
 
     function randomizeProp()
