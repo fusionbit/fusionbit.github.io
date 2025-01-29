@@ -29,6 +29,25 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#03a9f4">
 
+    <link rel="stylesheet" href="https://dev.mebot.ai/style.css">
+    <link rel="stylesheet" href="https://dev.mebot.ai/styles/widget.css">
+
+    <style>
+        #chat-widget-container {
+            display: none; /* Hide the container initially */
+            position: fixed; /* Fix it to the viewport */
+            bottom: 20px; /* 20px from the bottom */
+            right: 20px; /* 20px from the right */
+            width: 350px; /* Set the width of the widget */
+            height: 500px; /* Set the height of the widget */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Prevent content overflow */
+            z-index: 9999; /* Ensure it's on top of other elements */
+            background-color: #fff; /* Set background color */
+        }
+    </style>
+
 </head>
 
 <body style="background-color: #fefefe">
@@ -36,7 +55,11 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script src="https://dev.mebot.ai/chat-widget.umd.js"></script>
 
+<div id="chat-widget-container"></div>
 
 <div class="row light-blue center">
     <div class="doodle-background"></div>
@@ -90,24 +113,32 @@
 
                 <div class="card-content white-text">
                     <br/>
-                    <p class="default-cursor" style="text-align: justify">Our company was found in 2016 by 3 idiots
-                        and named <b>Fusionbit</b> on <i>3rd August 2016</i>. Our company aims to make this world a
-                        better place by
-                        contributing in all kind of IT projects. We develop all kind of customised softwares and
-                        programs.
-                        We strongly believe in ethical ways of developing softwares keeping data security and privacy in
-                        mind. At our company our developers and contributors like to work on projects with
-                        challenges and risks in it. We always
-                        love helping others. We
-                        believe
-                        in working with dedication and transparency with our clients. We like experimenting with our
-                        knowledge
-                        and skills, ensuring that there is absolutely no compromise in ethical standards of work we
-                        deliver.
-                        We strongly believe in achieving goals through
-                        collaborative efforts.
-                        A good work is a reflection of a good team. We enjoy knowledge sharing & brainstorming sessions
-                        with our teams.</p>
+                    <p class="default-cursor" style="text-align: justify">
+                        <b>Fusionbit</b> was founded on <i>August 3, 2016</i>, by three passionate individuals with a
+                        vision to make a
+                        positive impact through innovative IT solutions. Our mission is to contribute to the world by
+                        developing custom software and programs that not only meet the needs of our clients but also
+                        uphold the highest standards of security, privacy, and ethical development.
+
+                        At Fusionbit, we embrace challenges and thrive on tackling projects that push the boundaries of
+                        our knowledge and skills. We are committed to working with transparency, integrity, and
+                        dedication, ensuring that every project we deliver reflects our core values. We believe in the
+                        power of collaboration  great work is the result of a strong, cohesive team.
+
+                        Our team values continuous learning, knowledge sharing, and creative brainstorming, which allows
+                        us to consistently deliver cutting-edge solutions. We prioritize ethical practices in everything
+                        we do, from design to deployment, and we are always looking for like-minded developers who share
+                        our passion for creating meaningful and responsible technology.
+
+                        We also believe in the transformative power of AI. Rather than seeing it as a threat to jobs, we
+                        view AI as an opportunity for developers to enhance their work and productivity. With AI's
+                        assistance, developers can deliver more in less time, allowing for greater innovation and the
+                        ability to focus on more complex and creative aspects of development. We see AI as a tool that
+                        empowers our team to achieve new heights and take on even more ambitious projects.
+
+                        If you're someone who wants to contribute to impactful projects and work in a transparent,
+                        collaborative environment, we'd love to have you join our team.
+                    </p>
                     <br>
                     <p>
                         We are always looking for developers who wants to work ethically with us.
@@ -129,7 +160,7 @@
                         <div class="col s12 m4 center-align">
                             <p><a target="_blank"
                                   href="https://docs.google.com/document/d/e/2PACX-1vT25A47ryiB9vJDtRYMMG4jwHBdbCQfSckB9cH98C2bC4sPUIlgQ0jt4dz03Y8LyrYj0M2AWjoHaV-N/pub"
-                                  style="font-size: 12px; width: 180px; color: white; cursor: pointer; text-decoration: underline;">Customer
+                                  style="font-size: 12px; width: 180px; color: white; cursor: pointer; text-decoration: underline;">Customer/Client
                                 Service Policy</a></p>
                         </div>
                         <div class="col s12 m4 center-align">
@@ -151,18 +182,17 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <div class="card red darken-3">
+            <div class="card red darken-1">
                 <div class="card-content white-text">
                     <p>
-                        Currently looking for Experienced <b>Core JSP Developer</b> and <b>CSS Developer</b>. Work
-                        remotely
-                        10-15 Hrs/week.
+                        Currently looking for Experienced <b>JSP Developer</b> and <b>CSS Expert</b>. Work
+                        remotely or from our office in Ahmedabad, Gujarat, India.
                     </p>
                     <br>
-                    <p>*Earn min Rs.250/- up to Rs.700/- per hour.</p>
+                    <p>*Earn up to $20 per hour.</p>
                     <br>
                     <p>
-                        We are also open for an internship programs with a good stipend and training.
+                        We are also open for an internship programs with a good stipend and training in AI tools and Prompt Engineering.
                     </p>
                     <br>
                     <p>
@@ -1307,7 +1337,8 @@
     <div class="row center">
         <div id="rutvik-mehta" class="col s12 m4 center">
             <img class="user-image" src="img/me.jpeg">
-            <p>Rutvik Mehta<br><span style="color: darkgrey">Full-Stack Developer</span></p>
+            <p>Rutvik Mehta<br><span style="color: darkgrey"><a href="#" id="init-widget-button">Chat Now</a></span></p>
+
         </div>
 
         <div class="col s12 m4 center">
@@ -1528,7 +1559,32 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         var elems = document.querySelectorAll('.tooltipped');
-        var instances = M.Tooltip.init(elems, options);
+        // var instances = M.Tooltip.init(elems, options);
+
+        const initButton = document.getElementById("init-widget-button");
+
+        // Add click event listener to the button
+        initButton.addEventListener("click", () => {
+            console.log("Initializing Chat Widget...");
+
+            window.ChatWidget.initChatWidget({
+                botDetails: {
+                    botName: "Archie",
+                    botImage: "https://8dcb18e1e3a2cfdec673ef21bae40f16.cdn.bubble.io/f1695163577564x205348807698918500/Archie%20Bunker.png",
+                    slug: "archie-bot",
+                },
+                userToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZXZlbG9wbWVudEBtZWJvdC5haSIsImV4cCI6MTczOTgyMDExOH0.ph8icFmUosHfIQy2N1HfTon0w8qEXRiP7lzmPh9L-OI",
+            });
+
+            const container = document.getElementById("chat-widget-container");
+
+            // Wait until the widget is loaded
+            setTimeout(() => {
+                container.style.display = "block";
+            }, 1000); // Adjust delay if needed
+
+        });
+
     });
 
     $(document).ready(function () {
