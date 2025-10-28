@@ -573,16 +573,16 @@ nav .sidenav-trigger i {
         grid-template-columns: 1fr;
         gap: 16px;
     }
-    
+
     .project-card.featured {
         grid-column: span 1;
         min-height: 320px;
     }
-    
+
     .project-image {
         height: 180px;
     }
-    
+
     .show-all-btn {
         padding: 12px 30px;
         font-size: 14px;
@@ -1230,18 +1230,281 @@ nav .sidenav-trigger i {
     .team-grid { padding: 0 12px; gap: 16px; row-gap: 18px; }
 }
 
-/* Footer */
-footer.page-footer {
-    background: #2c3e50 !important;
-    padding-top: 40px;
+/* Modern Footer */
+.modern-footer {
+    position: relative;
+    background: linear-gradient(135deg, #1a1f36 0%, #2c3e50 100%);
+    color: #ffffff;
+    margin-top: 0;
+    padding-top: 0;
 }
 
-footer a {
+.footer-wave {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.footer-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.footer-wave .shape-fill {
+    fill: #f8f9fa;
+}
+
+.footer-content {
+    padding: 60px 0 40px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.footer-brand h5 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-tagline {
+    color: #667eea;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
-footer a:hover {
-    opacity: 0.8;
+.footer-links a i {
+    font-size: 18px;
+    color: #667eea;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.footer-contact {
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.contact-item i {
+    color: #667eea;
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+.contact-item a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.contact-item a:hover {
+    color: #667eea;
+}
+
+.contact-item span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(102, 126, 234, 0.1);
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: #667eea;
+    border-color: #667eea;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.social-link img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+.social-link i {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-bottom-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.footer-note {
+    font-size: 0.85rem !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Footer Responsive */
+@media only screen and (max-width: 992px) {
+    .footer-content {
+        padding: 50px 0 30px;
+    }
+
+    .footer-brand {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-tagline,
+    .footer-description {
+        text-align: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links a {
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-wave svg {
+        height: 60px;
+    }
+
+    .footer-content {
+        padding: 40px 0 25px;
+    }
+
+    .footer-brand h5 {
+        font-size: 1.5rem;
+    }
+
+    .footer-title {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
 }
 
 /* Vision & Mission Button */
@@ -1283,39 +1546,39 @@ footer a:hover {
     nav .brand-logo img {
         height: 40px;
     }
-    
+
     .vision-mission-btn {
         font-size: 14px !important;
         padding: 12px 20px !important;
         width: auto;
         max-width: 95%;
     }
-    
+
     .vision-mission-btn i {
         font-size: 20px;
     }
-    
+
     .email-btn {
         font-size: 14px !important;
         padding: 12px 20px !important;
         width: auto;
         max-width: 95%;
     }
-    
+
     .email-btn i {
         font-size: 20px;
     }
-    
+
     .show2, .hide2 {
         font-size: 13px;
         padding: 10px 20px;
         bottom: 20px;
     }
-    
+
     .panel-wrapper {
         padding-bottom: 80px;
     }
-    
+
     .panel {
         max-height: 600px;
     }
