@@ -13,7 +13,7 @@
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
@@ -61,14 +61,17 @@
 <div id="chat-widget-container"></div>
 
 <!-- Navigation -->
-<nav>
+<nav id="site-nav" class="primary-nav">
     <div class="nav-wrapper container">
         <a href="#!" class="brand-logo">
-            <img src="img/fusionbit_logo.png" height="50" style="border-radius: 50%;">
-            <span>Fusionbit</span>
+            <img src="img/fusionbit_logo.png" height="48" width="48" alt="Fusionbit logo" class="brand-mark">
+            <div class="brand-text">
+                <span class="brand-name">Fusionbit</span>
+                <span class="brand-tagline">Accelerated by AI</span>
+            </div>
         </a>
         <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -94,24 +97,34 @@
         <div class="hero-orb orb-2"></div>
         <div class="hero-orb orb-3"></div>
     </div>
-    <div class="hero-props" aria-hidden="true">
-        <span class="floating-chip chip-1">AI Automation</span>
-        <span class="floating-chip chip-2">Full Stack</span>
-        <span class="floating-chip chip-3">Mobile</span>
-        <span class="floating-chip chip-4">Cloud</span>
-        <span class="floating-chip chip-5">DevOps</span>
-        <span class="floating-chip chip-6">Web</span>
-    </div>
+
     <div class="container hero-content">
         <div class="row center">
             <div class="col s12">
                 <div class="glass-card">
+
                     <h1 class="hero-title gradient-text">Driven by Developers, Accelerated by AI</h1>
-                    <div class="hero-ctas">
-                        <a href="#projects" class="btn hero-btn primary"><i class="material-icons left">apps</i>View Projects</a>
-                        <a href="#contact-section" class="btn hero-btn outline"><i class="material-icons left">send</i>Contact Us</a>
+                    <br>
+                    <p class="hero-subtitle">Fusionbit is a collective of senior developers blending ethical AI automation with full-stack craft. We help NGOs, startups, and enterprises ship secure, resilient software across mobile, web, and cloud.</p>
+                    <br>
+                    <div class="hero-points">
+                        <div class="hero-point">
+                            <i class="material-icons" aria-hidden="true">psychology</i>
+                            <span>AI-accelerated delivery with human oversight at every step.</span>
+                        </div>
+                        <div class="hero-point">
+                            <i class="material-icons" aria-hidden="true">devices</i>
+                            <span>Product pods covering strategy, UX, web, mobile, and cloud execution.</span>
+                        </div>
+                        <div class="hero-point">
+                            <i class="material-icons" aria-hidden="true">verified_user</i>
+                            <span>Security-first mindset powering platforms for regulated and high-impact domains.</span>
+                        </div>
                     </div>
-                    <!-- <p class="hero-subtitle" style="font-size: 1.1rem; margin-top: 10px;">Connecting the best developers across the globe</p> -->
+                    <br>
+                    <div class="hero-trust" role="presentation">
+                        <span class="hero-trust-label">Trusted by teams behind</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,7 +214,7 @@
                 <div class="info-card accent">
                     <h5 style="font-weight: 700; margin-bottom: 20px;"><i class="material-icons" style="vertical-align: middle;">work_outline</i> We're Hiring!</h5>
                     <p style="font-size: 1.1rem; line-height: 1.8;">
-                        Currently looking for experienced <b>JSP Developers</b> and <b>CSS Experts</b>. Work
+                        Currently looking for experienced <b>Rust Developers</b> and <b>ML Experts</b>. Work
                         remotely or from our office in Ahmedabad, Gujarat, India.
                     </p>
 <!--                    <p style="font-size: 1.1rem; margin-top: 15px; font-weight: 600;">-->
@@ -1496,10 +1509,53 @@
             </div>
         </div>
         <div class="team-grid">
-            <div id="rutvik-mehta" class="member-card center">
-                <div class="member-avatar"><img src="img/me.jpeg" alt="Photo of Rutvik Mehta"></div>
-                <div class="member-name">Rutvik Mehta</div>
-                <div class="member-role">CEO/Founder</div>
+
+            <div class="member-card center">
+                <div class="member-badge">
+                    <img class="tooltipped" data-position="bottom" data-tooltip="Shruti deserves Gold badge for her very good communication and recruiting skills" src="img/badges/gold.png" alt="Gold badge">
+                </div>
+                <div class="member-avatar"><img src="img/shruti.jpg" alt="Photo of Shruti Gupta"></div>
+                <div class="member-name">Shruti Gupta</div>
+                <div class="member-role">Project Manager</div>
+            </div>
+
+            <div class="member-card center">
+                <div class="member-badge">
+                    <img class="tooltipped" data-position="bottom" data-tooltip="Deep deserves Gold Badge for putting his consistent efforts in development and very good grip on Vue js framework" src="img/badges/gold.png" alt="Gold badge">
+                </div>
+                <div class="member-avatar"><img src="img/team/deep.jpg" alt="Photo of Deep Govani"></div>
+                <div class="member-name">Deep Govani</div>
+                <div class="member-role">Vue/React Developer</div>
+            </div>
+
+            <div class="member-card center">
+                <div class="member-avatar"><img src="img/team/jaydip.png" alt="Photo placeholder for Krishna Mistry"></div>
+                <div class="member-name">Jaydip Umaretiya</div>
+                <div class="member-role">Android Developer (Kotlin)</div>
+            </div>
+
+            <div class="member-card center">
+                <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
+                <div class="member-name">Mayur</div>
+                <div class="member-role">Python Developer</div>
+            </div>
+
+            <div class="member-card center">
+                <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
+                <div class="member-name">Mukund</div>
+                <div class="member-role">PHP Laravel Developer</div>
+            </div>
+
+            <div class="member-card center">
+                <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
+                <div class="member-name">Khushali</div>
+                <div class="member-role">Node JS Expert</div>
+            </div>
+
+            <div class="member-card center">
+                <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
+                <div class="member-name">Kratika Gupta</div>
+                <div class="member-role">Team Manager</div>
             </div>
 
             <div class="member-card center">
@@ -1517,22 +1573,29 @@
                 <div class="member-role">Flutter Developer</div>
             </div>
 
-            <div class="member-card center">
+            <div id="rutvik-mehta" class="member-card center hidden-member">
+                <div class="member-avatar"><img src="img/me.jpeg" alt="Photo of Rutvik Mehta"></div>
+                <div class="member-name">Rutvik Mehta</div>
+                <div class="member-role">CEO/Founder</div>
+            </div>
+
+
+            <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/pranav.jpg" alt="Photo of Pranav Poriya"></div>
                 <div class="member-name">Pranav Poriya</div>
                 <div class="member-role">Android Developer</div>
             </div>
 
-            <div class="member-card center">
+            <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Sanket Jasani"></div>
-                <div class="member-name">Sanket Jasani</div>
-                <div class="member-role">Project Manager</div>
+                <div class="member-name">Sanket</div>
+                <div class="member-role">Project Manager (Past)</div>
             </div>
 
             <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/team/harsh.jpeg" alt="Photo of Harsh Shah"></div>
                 <div class="member-name">Harsh Shah</div>
-                <div class="member-role">BDE</div>
+                <div class="member-role">BDE (Past)</div>
             </div>
 
             <div class="member-card center hidden-member">
@@ -1554,23 +1617,8 @@
             </div>
 
             <div class="member-card center hidden-member">
-                <div class="member-badge">
-                    <img class="tooltipped" data-position="bottom" data-tooltip="Shruti deserves Gold badge for her very good communication and recruiting skills" src="img/badges/gold.png" alt="Gold badge">
-                </div>
-                <div class="member-avatar"><img src="img/shruti.jpg" alt="Photo of Shruti Gupta"></div>
-                <div class="member-name">Shruti Gupta</div>
-                <div class="member-role">HR</div>
-            </div>
-
-            <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Hardik"></div>
                 <div class="member-name">Hardik</div>
-                <div class="member-role">JSP Developer</div>
-            </div>
-
-            <div class="member-card center hidden-member">
-                <div class="member-avatar"><img src="img/jaydeep.png" alt="Photo of Jaydeep"></div>
-                <div class="member-name">Jaydeep</div>
                 <div class="member-role">JSP Developer</div>
             </div>
 
@@ -1593,30 +1641,21 @@
             </div>
 
             <div class="member-card center hidden-member">
-                <div class="member-badge">
-                    <img class="tooltipped" data-position="bottom" data-tooltip="Deep deserves Gold Badge for putting his consistent efforts in development and very good grip on Vue js framework" src="img/badges/gold.png" alt="Gold badge">
-                </div>
-                <div class="member-avatar"><img src="img/team/deep.jpg" alt="Photo of Deep Govani"></div>
-                <div class="member-name">Deep Govani</div>
-                <div class="member-role">Vue/React Developer</div>
-            </div>
-
-            <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
                 <div class="member-name">Krishna Mistry</div>
-                <div class="member-role">React Native Developer</div>
+                <div class="member-role">React Native Developer (Past)</div>
             </div>
 
             <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
-                <div class="member-name">Jaydip Umerathiya</div>
-                <div class="member-role">Android Developer (Kotlin)</div>
+                <div class="member-name">Harsh</div>
+                <div class="member-role">React Native Developer (Past)</div>
             </div>
 
             <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
-                <div class="member-name">Mukund</div>
-                <div class="member-role">PHP Laravel Developer</div>
+                <div class="member-name">Dhruv</div>
+                <div class="member-role">React Native Developer (Past)</div>
             </div>
 
             <div class="member-card center hidden-member">
@@ -1625,11 +1664,6 @@
                 <div class="member-role">Python Developer</div>
             </div>
 
-            <div class="member-card center hidden-member">
-                <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
-                <div class="member-name">Mayur</div>
-                <div class="member-role">Python Developer</div>
-            </div>
 
             <div class="member-card center hidden-member">
                 <div class="member-avatar"><img src="img/fusionbit_logo.png" alt="Photo placeholder for Krishna Mistry"></div>
@@ -1642,7 +1676,7 @@
         <!-- Show More Button -->
         <div class="row center" style="margin-top: 30px;">
             <button id="toggleTeamBtn" class="btn waves-effect waves-light" style="background-color: #667eea; border-radius: 50px; padding: 0 30px; font-weight: 600;">
-                <span class="show-text">Show 16 More Members</span>
+                <span class="show-text">Show All Members</span>
                 <span class="hide-text" style="display: none;">Show Less</span>
                 <i class="material-icons right">expand_more</i>
             </button>
